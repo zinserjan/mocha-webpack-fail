@@ -10,23 +10,23 @@ module.exports = {
             {
                 test: /\.js.{0,1}$/,
                 exclude: /node_modules/,
-                loader: 'raw',
+                loader: 'raw'
             },
             {
                 test: /\.(ts|tsx)$/,
                 exclude: /node_modules/,
                 loaders: [
-                    'ts-loader',
-                ],
+                    'ts-loader'
+                ]
             },
             {
                 test: /\.txt$/,
-                loader: 'raw',
-            },
-        ],
+                loader: 'raw'
+            }
+        ]
     },
     resolve: {
-        extensions: ['', '.ts', '.tsx', '.js', '.jsx'],
+        extensions: ['', '.ts', '.tsx', '.js', '.jsx']
     },
-    target: 'electron',
+    target: 'node'
 };
