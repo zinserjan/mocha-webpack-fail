@@ -7,11 +7,11 @@ Note that this uses typescript and the webpack `ts-loader`.
 ## Steps to Reproduce
 
     npm i
-    npm run test
+    npm run test    # uses --recursive
         
     # other ways that should work as well:
-    npm run test2
-    npm run test3
+    npm run test2   # uses a single glob pattern
+    npm run test3   # uses the --glob flag
     
     # It works when specifying just a single file:
     npm run singleTest
