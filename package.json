@@ -1,0 +1,25 @@
+{
+  "name": "mocha-webpack-test",
+  "version": "0.0.1",
+  "description": "minimal project showing a bug in mocha-webpack",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha-webpack --webpack-config build.test.config.js --recursive tests",
+    "test2": "mocha-webpack --webpack-config build.test.config.js \"tests/**/*.ts\"",
+    "test3": "mocha-webpack --webpack-config build.test.config.js --glob \"*.ts\" tests",
+    "singleTest": "mocha-webpack --webpack-config build.test.config.js tests/example.test.ts"
+  },
+  "author": "dola",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2",
+    "mocha-webpack": "^0.7.0",
+    "raw-loader": "^0.5.1",
+    "source-map-support": "0.4.3",
+    "ts-loader": "^0.9.1",
+    "ts-node": "^1.3.0",
+    "typescript": "^1.8.10",
+    "webpack": "^1.13.2"
+  }
+}
